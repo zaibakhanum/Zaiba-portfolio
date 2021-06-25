@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaiba khanum - portfolio</title>
+     <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/light.css">
+</head>
+<!--
+    Navbar
+        Icon (L)
+        Theme Button (L)
+        Links
+            Link
+              Icon
+              Text
+    Theme (M & S)
+    Hero
+        SVG Animation
+        Design Mock Element
+        Png Image
+        Title
+        Buttons (2)
+    About
+        Title
+        Content
+            Link
+        Button
+--------------------------
+
+    Skill
+        Title
+        Cards
+            Card
+                Hover Content - > MD
+                Seperate Content - SMALL
+    Project
+        Title
+        Cards
+            Card
+    Contact
+        Title
+        Icons
+------------------
+    Animation
+-->
+<body>
+     <!-- Illustration  SVG -->
+    <svg class="illus" viewBox="0 0 439 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="illus">
+             <path id="y-3" d="M323 235C323 221.193 334.193 210 348 210H439V260H348C334.193 260 323 248.807 323 235V235Z"
+                fill="#00FFE5" />
+            <path id="r-1" d="M104 165C104 151.193 115.193 140 129 140H439V190H129C115.193 190 104 178.807 104 165V165Z"
+                fill="#CD143F" />
+            <path id="y-2" d="M178 95C178 81.1929 189.193 70 203 70H439V120H203C189.193 120 178 108.807 178 95V95Z"
+                fill="#00FFE5" />
+            <path id="y-1" d="M0 25C0 11.1929 11.1929 0 25 0H439V50H25C11.1929 50 0 38.8071 0 25V25Z" 
+                fill="#00FFE5" />
+        </g>
+    </svg>
+
+    <!-- Illustration SVG Ends -->
+    <!-- Navbar begins-->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#home">
+                <img src="./assets/Icon.png" alt="">
+            </a>
+        </div>
+        <div class="navLinks">
+            <ul>
+                <li>
+                    <a href="#home" class="navLink">
+                        <span class="material-icons">
+                            home
+                        </span>
+                        <span class="navText">
+                            Home
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills" class="navLink">
+                        <span class="material-icons">
+                            settings
+                        </span>
+                        <span class="navText">
+                            Skills
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#achievments" class="navLink">
+                        <span class="material-icons">
+                            group_work
+                        </span>
+                        <span class="navText">
+                            Achievments
+                        </span>
+                    </a>
+                </li>
+                <li>
+                     <a href="#contact" class="navLink">
+                        <span class="material-icons">
+                            person_pin
+                        </span>
+                        <span class="navText">
+                            Contact
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="navTheme" id="themeBtn1">
+        <span class="material-icon">
+            light_mode
+        </span>
+        </div>
+    </nav>
+    <!-- Navbar Ends-->
+    <!-- Theme Button Begins -->
+    <div class="theme" id="themeBtn2">
+        <span class="material-icons">light_mode</span>
+    </div>
+    <!-- Theme Button Ends -->
+    <!-- Hero section begins -->
+    <div class="hero" id="home">
+        <div class="heroImg">
+            <img src="./assets/mee1.jpg" alt="Zaiba Khanum">
+        </div>
+        <div class="heroTitle">
+            Zaiba Khanum
+        </div>
+            <div class="heroBtns">
+                <a href="" class="btnSec" id="btn">About me</a>
+                <a href="" class="btn" id="btn">Get in Touch</a>
+            </div>
+    </div>
+    <!-- Hero section ends-->
+    <div class="space"></div>
+    <!-- About section begins -->
+    <div id="about"></div>
+    <div class="about section">
+        <div class="title">
+            About me
+        </div>
+        <div class="aboutContent">
+            <span>Hey there! 👋</span>
+            <span>This is Zaiba Khanum. A 20 year old B.Tech Student.</span>
+            <span>Iam a student of Presidency University, pursuing 3rd year btech in Information Science And Engineering. Iam a very optimistic person and achieving my goals excites me the most.</span>        
+        </div>
+        <!-- About section ends-->
+        <div class="space"></div>
+        <!-- Skills section begins-->
+        <div id="skills"></div>
+        <div class="skills section">
+            <div class="title">Skills</div>
+            <div class="cardRow">
+                <div class="card">
+                    <div class="cardIcon">
+                        <span class="material-icons">code</span>
+                    </div>
+                    
+                    <div class="cardTitle">
+                    Front-End Dev
+                </div>
+                <div class="cardContentLg">
+                   HTML, CSS Frameworks and JavaScript.
+                </div>
+                <div class="cardContentSm">
+                   HTML, CSS Frameworks and JavaScript.
+                </div>
+            </div> <div class="card">
+                <div class="cardIcon">
+                    <span class="material-icons">code</span>
+                </div>
+                <div class="cardTitle">
+                    python
+                </div>
+                <div class="cardContentLg">
+                    Variables and Datatypes, Strings, Arrays etc.
+                </div>
+                <div class="cardContentSm">
+                     Variables and Datatypes, Strings, Arrays etc.
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardIcon">
+                    <span class="material-icons">code</span>
+                </div>
+                <div class="cardTitle">
+                    C++
+                </div>
+                <div class="cardContentLg">
+                    Identifiers, Data types, Arithmetic operators, Increment and Decrement operators etc.
+                </div>
+                <div class="cardContentSm">
+                    Identifiers, Data types, Arithmetic operators, Increment and Decrement operators etc.
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardIcon">
+                    <span class="material-icons">code</span>
+                </div>
+                <div class="cardTitle">
+                    Communication Skills 
+                </div>
+                <div class="cardContentLg">
+                    Good at interaction and Communication with people.
+                </div>
+                <div class="cardContentSm">
+                    Good at interaction and Communication with people.
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardIcon">
+                    <span class="material-icons">code</span>
+                </div>
+                <div class="cardTitle">
+                    Leadership Skills
+                </div>
+                <div class="cardContentLg">
+                    Self-dev, Team-dev, Strategic thinking, Decision making etc.
+                </div>
+                <div class="cardContentSm">
+                     Self-dev, Team-dev, Strategic thinking, Decision making etc.
+                </div>
+            </div>
+
+          </div>
+    </div>
+<!-- Skills section ends-->
+<div class="space"></div>
+<!-- achievment section begins-->
+<div id="achievments"></div>
+<div class="achievments section">
+    <div class="title">Achievments</div>
+    
+    <div class="cardRow">
+            <div class="card">
+                <a href="https://ibb.co/k0tJKWT"><img src="https://i.ibb.co/tc9zBW6/intership-certificate.png" alt="intership-certificate" border="0" /></a>
+            </div>
+            <div class="card">
+               <a href="https://ibb.co/Xt8FcZk"><img src="https://i.ibb.co/m48hfCF/cloudcomputing-certificate.png" alt="cloudcomputing-certificate" border="0"></a>
+            </div>
+            <div class="card">
+               <a href="https://ibb.co/KsLN5pn"><img src="https://i.ibb.co/hdZXgJ0/machinelearning-certificate.png" alt="machinelearning-certificate" border="0"></a>
+            </div>
+
+        </div>
+</div>
+<!-- achievment section ends-->
+<div class="space"></div>
+<!-- contact section begins-->
+ <div id="contact"></div>
+    <div class="contact section">
+        <div class="title">Let's Talk</div>
+        <div class="iconRow">
+            <a target="_blank" href="#" class="icon">
+                <span class="fas fa-phone-alt"></span>
+            </a>
+            <a target="_blank" href="#" class="icon">
+                <span class="fas fa-envelope"></span>
+            </a>
+            <a target="_blank" href="#" class="icon">
+                <span class="fab fa-instagram"></span>
+            </a>
+            <a target="_blank" href="#" class="icon">
+                <span class="fab fa-linkedin"></span>
+            </a>
+        </div>
+    </div>
+<!-- contact section ends -->
+
+   <div class="space"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+        integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"
+        integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q=="
+        crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

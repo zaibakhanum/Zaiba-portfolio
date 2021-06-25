@@ -1,0 +1,94 @@
+:root {
+    --crimson:#CD143F ;
+	--dark: #011627;
+	--aqua: #00FFE5;
+	--light: #f6f6f6;
+	--lBlue: #bfcde0;
+	--aquaL: #57f3e3;
+	--crimsonL: #b61a3e;
+	--blue: #6cabff;
+	--blueL: #3174d0;
+	--fFamily: 'Poppins', sans-serif;
+	--darkShadowSm: 4px 4px 15px rgba(211, 211, 211, 0.158);
+	--darkShadowLg: 2px 2px 10px rgba(211, 211, 211, 0.158);
+    --lightShadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+body.dark {
+	background-color: var(--light);
+	color: var(--dark);
+}
+
+body.dark a {
+	color: var(--dark);
+}
+
+body.dark .title {
+	color: var(--blueL);
+}
+
+body.dark .navbar .navTheme {
+	color: var(--light);
+}
+body.dark .navbar .navTheme:hover {
+	color: var(--crimsonL);
+}
+
+body.dark .navbar .navLinks .navLink {
+	color: var(--light);
+}
+
+body.dark .navbar .navLinks .navLink:hover {
+	color: var(--crimsonL);
+}
+body.dark .hero .heroBtns .btn {
+	background-color: var(--crimsonL);
+	color: var(--dark);
+}
+
+body.dark .hero .heroBtns .btnSec {
+	border: 2px solid var(--crimsonL);
+	color: var(--dark);
+}
+body.dark .hero .heroBtns .btnSec:hover {
+	background-color: var(--crimsonL);
+	color: var(--dark);
+}
+
+body.dark .about .aboutContent a {
+	color: var(--blueL);
+	transition: all 200ms;
+}
+body.dark .about .aboutContent a:hover {
+	color: var(--crimsonL);
+}
+
+body.dark .skills .cardRow .card {
+	box-shadow: var(--lightShadow);
+}
+
+body.dark .skills .cardRow .card .cardIcon .material-icons {
+	color: var(--crimsonL);
+}
+
+body.dark .skills .cardRow .card .cardContentLg {
+	background-color: var(--crimsonL);
+	color: var(--dark);
+}
+
+body.dark .achievments .cardRow .card img {
+	box-shadow: var(--lightShadow);
+}
+body.dark .contact .iconRow .icon:hover {
+	color: var(--crimsonL);
+}
+
+@media screen and (max-width: 860px) {
+	body.dark .theme:hover {
+		color: var(--crimsonL);
+	}
+
+	body.dark .skills .cardRow .card .cardContentSm {
+		background-color: var(--crimsonL);
+		color: var(--dark);
+	}
+}

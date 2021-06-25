@@ -1,0 +1,454 @@
+:root {
+    --crimson:#CD143F ;
+	--dark: #011627;
+	--aqua: #00FFE5;
+	--light: #f6f6f6;
+	--lBlue: #bfcde0;
+	--aquaL: #57f3e3;
+	--crimsonL: #b61a3e;
+	--blue: #6cabff;
+	--blueL: #3174d0;
+	--fFamily: 'Poppins', sans-serif;
+	--darkShadowSm: 4px 4px 15px rgba(211, 211, 211, 0.158);
+	--darkShadowLg: 2px 2px 10px rgba(211, 211, 211, 0.158);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: var(--fFamily);
+}
+
+body {
+	background-color: var(--dark);
+	color: var(--light);
+	overflow-x: hidden;
+	transition: all 200ms ease-in-out;
+}
+
+body a {
+	color: var(--light);
+	text-decoration: none;
+}
+
+body ul {
+	list-style-type: none;
+}
+
+.title {
+	font-size: 82px;
+	color: var(--blue);
+	font-weight: 800;
+}
+
+.space {
+	width: 100%;
+	height: 20vh;
+}
+
+.section {
+	width: 100%;
+	margin-left: 12vh;
+	padding: 50px 100px;
+	display: flex;
+	flex-direction: column;
+}
+/* Illustration SVG CSS */
+.illus {
+	position: absolute;
+	right: 0;
+	top: 50px;
+	width: 300px;
+}
+/* Navbar CSS */
+.navbar {
+	position: fixed;
+	width: 15vh;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items: center;
+	box-shadow: var(--darkShadowLg);
+	background-color: var(--dark);
+	z-index: 99;
+}
+.navbar .logo {
+	position: absolute;
+	top: 50px;
+	transition: all 200ms ease-in-out;
+}
+
+.navbar .logo:hover {
+	transform: scale(1.1);
+}
+
+.navbar .logo img {
+	width: 35px;
+}
+.navbar .navTheme {
+	position: absolute;
+	bottom: 50px;
+	cursor: pointer;
+	transition: all 200ms ease-in-out;
+}
+
+.navbar .navTheme:hover {
+	transform: scale(1.1);
+	color: var(--crimson);
+}
+.navbar .navLinks ul {
+	height: 50vh;
+	display: flex !important;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	display: none;
+}
+.navbar .navLinks .navLink {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: all 200ms ease-in-out;
+}
+.navbar .navLinks .navLink:hover {
+	color: var(--crimson);
+}
+
+.navbar .navLinks .navLink .material-icons {
+	font-size: 36px;
+}
+
+.navbar .navLinks .navLink .navText {
+	font-size: 14px;
+}
+
+/* Theme Button CSS */
+.theme {
+	display: none;
+}
+
+/* Hero CSS */
+.hero {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero .heroImg img {
+	width: 300px;
+	margin-bottom: 50px;
+	border-radius: 50%;
+}
+
+.hero .heroTitle {
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.hero .heroBtns {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero .heroBtns .btn {
+	width: 200px;
+	text-align: center;
+	padding: 15px 30px;
+	background-color: var(--crimson);
+	color: var(--dark);
+	margin: 10px;
+	border-radius: 4px;
+	font-size: 16px;
+	font-weight: 500;
+	transition: all 200ms ease-in-out;
+}
+.hero .heroBtns .btnSec {
+	width: 200px;
+	text-align: center;
+	padding: 15px 30px;
+	border: 2px solid var(--crimson);
+	color: var(--crimson);
+	margin: 10px;
+	border-radius: 4px;
+	font-size: 16px;
+	font-weight: 500;
+	transition: all 200ms ease-in-out;
+}
+.hero .heroBtns .btn:hover {
+	transform: scale(1.08);
+}
+
+.hero .heroBtns .btnSec:hover {
+	background-color: var(--crimson);
+	color: var(--dark);
+}
+/* About Section CSS */
+
+.about .aboutContent {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	font-size: 26px;
+	width: 80%;
+	text-align: justify;
+	line-height: 50px;
+}
+.about .aboutContent a {
+	color: var(--blue);
+	transition: all 200ms;
+}
+
+.about .aboutContent a:hover {
+	color: var(--crimson);
+}
+/* Skills CSS */
+
+.skills .cardRow {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: 20px;
+	margin-left: -10px;
+}
+.skills .cardRow .card {
+	width: 300px;
+	height: 300px;
+	box-shadow: var(--darkShadowLg);
+	margin: 10px;
+	border-radius: 8px;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+    }
+
+.skills .cardRow .card .cardIcon .material-icons {
+	font-size: 64px;
+	color: var(--aqua);
+}
+
+.skills .cardRow .card .cardTitle {
+	font-size: 32px;
+}
+.skills .cardRow .card .cardContentLg {
+	position: absolute;
+	background-color: var(--crimson);
+	color: var(--dark);
+	width: 100%;
+	height: 100%;
+	padding: 35px;
+	border-radius: 8px;
+	font-size: 18px;
+	font-weight: 600;
+	transform: translateY(100%);
+	transition: all 350ms ease-in-out;
+}
+
+.skills .cardRow .card:hover .cardContentLg {
+	transform: translateY(0%);
+}
+
+.skills .cardRow .card .cardContentSm {
+	display: none;
+}
+
+/* Achievment CSS */
+.achievments .cardRow {
+    display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	margin-left: -15px;
+}
+.achievments .cardRow .card {
+	width: 45%;
+	margin: 10px;
+}
+.achievments .cardRow .card img {
+	width: 100%;
+	box-shadow: var(--darkShadowLg);
+	border-radius: 8px;
+	transition: all 200ms ease-in-out;
+}
+.achievments .cardRow .card:hover img {
+	transform: scale(1.02);
+	box-shadow: 2px 2px 25px #ffffff2c;
+}
+
+/* Contact CSS */
+.contact .iconRow {
+	display: flex;
+	margin-top: 20px;
+	width: 100%;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.contact .iconRow .icon {
+	margin: 10px;
+	font-size: 64px;
+	padding-right: 50px;
+	transition: all 200ms ease-in-out;
+}
+.contact .iconRow .icon:hover {
+	color: var(--crimson);
+	transform: translateY(-10%);
+}
+
+@media screen and (max-width: 860px) {
+	/* Global CSS */
+	.title {
+		font-size: 52px;
+	}
+	.space {
+		width: 100%;
+		height: 10vh;
+	}
+	.section {
+		margin-left: 0;
+		padding: 50px 30px;
+	}
+
+    /* Illustration SVG CSS */
+	.illus {
+		top: 15px;
+		width: 200px;
+	}
+
+    /* Navbar CSS */
+	.navbar {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 15vh;
+		box-shadow: var(--darkShadowSm);
+		display: flex;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+	}
+
+	.navbar .logo,
+	 .navbar .navTheme {
+		display: none;
+	}
+	.navbar .navLinks {
+		width: 100%;
+	}
+	.navbar .navLinks ul {
+		height: 10vh;
+		width: 100%;
+		padding: 0 30px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.navbar .navLinks .navLink .material-icons {
+		font-size: 32px;
+	}
+
+	.navbar .navLinks .navLink .navText {
+		font-size: 14px;
+	}
+
+    /* Theme Button CSS */
+	.theme {
+		display: block;
+		position: absolute;
+		top: 30px;
+		left: 50px;
+		cursor: pointer;
+		transition: all 200ms ease-in-out;
+	}
+
+	.theme:hover {
+		color: var(--crimson);
+		transform: scale(1.1);
+	}
+
+    /* Hero CSS */
+	.hero .heroImg img {
+		width: 200px;
+		margin-bottom: 20px;
+        border-radius: 50%;
+	}
+	.hero .heroTitle {
+		font-size: 28px;
+	}
+	.hero .heroBtns {
+		flex-direction: column;
+	}
+
+    /* About Section CSS */
+
+	.about .aboutContent {
+		margin-top: 20px;
+		width: 100%;
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+    /* Skills CSS */
+	.skills .cardRow {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.skills .cardRow .card {
+		width: 250px;
+		height: 200px;
+		padding: 25px;
+		align-items: flex-start;
+		overflow: visible;
+	}
+	.skills .cardRow .card .cardIcon .material-icons {
+		font-size: 46px;
+	}
+
+	.skills .cardRow .card .cardTitle {
+		font-size: 22px;
+	}
+	.skills .cardRow .card .cardContentLg {
+		display: none;
+	}
+	.skills .cardRow .card .cardContentSm {
+		display: block;
+		position: absolute;
+		left: 85%;
+		width: 100%;
+		height: 95%;
+		background-color: var(--crimson);
+		color: var(--dark);
+		font-size: 16px;
+		font-weight: 500;
+		border-radius: 8px;
+		padding: 15px;
+	}
+
+    /* achievment CSS */
+	.achievments .cardRow {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.achievments .cardRow .card {
+		width: 90%;
+	}
+
+	/* Contact CSS */
+	.contact .iconRow .icon {
+		font-size: 32px;
+		padding-right: 20px;
+	}
+}
